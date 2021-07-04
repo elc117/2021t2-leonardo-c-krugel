@@ -1,6 +1,6 @@
-;;                Exemplos de codigo em Clojure para o T2.
+;                Exemplos de codigo em Clojure para o T2.
 
-;; Demonstracoes basicas de sintaxe:
+; Demonstracoes basicas de sintaxe:
 (def n1 42) ; Define uma variavel 'n1' com valor '42'
 
 (def n2 7)  ; Define uma variavel 'n2' com valor '7'
@@ -31,11 +31,12 @@
 
 
 
-;; Exemplo de codigo 1:
+; Exemplo de codigo 1:
 (defn greetings [name]
     (println "Hello" name))
+;; (greetings "Andrea")  =>  "Hello Andrea"
 
-;; Exemplo de codigo 2:
+; Exemplo de codigo 2:
 (defn factorial [n]
     (loop [current n
            next (dec current)
@@ -43,23 +44,33 @@
     (if (> current 1)
         (recur next (dec next) (* total current))
         total)))
+;; (factorial 5)  =>  120
 
 
+;; Sintaxe List Comprehension:
+(for [value container
+     :when (conditional value) ; Condicional
+     :let [variable]           ; Variavel local
+    value])                    ; Dado retornado pela list comprehension
 
-;; Exemplo List Comprehension 1 (list comprehension):
+; Exemplo List Comprehension 1 (list comprehension):
 (defn sumOdds-lc [values]
     (apply reduce + [(for [x values
-        :when (odd? x)]
-        x)]))
+                     :when (odd? x)]
+                     x)]))
+;; (sumOdds (range(10)))  => 25
 
-;; Exemplo List Comprehension 1 (high-order):
+; Exemplo List Comprehension 1 (high-order):
 (defn sumOdds-ho [values]
     (apply reduce + [(filter odd? values)]))
+;; (sumOdds (range(10)))  => 25
 
-;; Exemplo List Comprehension 2 :
-(defn combNumber []
-    (for [n1 (range 10)
-          n2 (range 10)
-          :when (or (= 0 n1)
-                    (even? n2))]
-        [n1 n2]))
+; Exemplo List Comprehension 2 :
+(defn countCombNumber []
+    (apply count(for [n1 (range 10)
+                      n2 (range 10)
+                :when (or (= 0 n1)
+                          (even? n2))]
+                [n1 n2])))
+;; (countCombNumber)  => 55
+
