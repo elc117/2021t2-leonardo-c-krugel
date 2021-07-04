@@ -7,12 +7,9 @@ Aluno: Leonardo Cargnin Krügel
 
 ---
 ### List Comprehension em Clojure:  
-Em Clojure a implementação de List Comprehension é bastante diferente daquela que vimos em Haskell  
-Implementada através do macro *for*, ela é semelhante com um loop como o que usamos em linguagens como C, porém tem suas particularidades.  
-
 
 #### [Apresentação]()
-#### [Slides]()
+#### [Slides](https://github.com/elc117/2021t2-leonardo-c-krugel/blob/master/slides.pptx)
 
 ---
 ### Referências: 
