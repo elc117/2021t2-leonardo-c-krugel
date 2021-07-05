@@ -2,13 +2,13 @@
 
 ## PRODUÇÃO DE VÍDEO  
 
-Prof Andrea Schwertner Charao  
+Prof Andrea Schwertner Charão  
 Aluno: Leonardo Cargnin Krügel  
 
 ---
 ### List Comprehension em Clojure:  
 
-#### [Apresentação]()
+#### [Apresentação](https://drive.google.com/file/d/1lNJUm8But0yM4PZkUMe633nLsd4dPmkO/view?usp=sharing)
 #### [Slides](https://docs.google.com/presentation/d/11aq2MXreeoyJrF-yHuE4Q-nBYVv-lpsS0ukQCWSvM-E/edit?usp=sharing)
 
 ---
