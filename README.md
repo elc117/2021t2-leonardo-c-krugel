@@ -9,7 +9,7 @@ Aluno: Leonardo Cargnin Krügel
 ### List Comprehension em Clojure:  
 
 #### [Apresentação]()
-#### [Slides](https://github.com/elc117/2021t2-leonardo-c-krugel/blob/master/slides.pptx)
+#### [Slides](https://docs.google.com/presentation/d/11aq2MXreeoyJrF-yHuE4Q-nBYVv-lpsS0ukQCWSvM-E/edit?usp=sharing)
 
 ---
 ### Referências: 

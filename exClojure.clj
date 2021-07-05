@@ -67,10 +67,10 @@
 
 ; Exemplo List Comprehension 2 :
 (defn countCombNumber []
-    (apply count(for [n1 (range 10)
-                      n2 (range 10)
-                :when (or (= 0 n1)
-                          (even? n2))]
-                [n1 n2])))
+    (count (for [n1 (range 10)
+                       n2 (range 10)
+                 :when (or (= 0 n1)
+                           (even? n2))]
+                 [n1 n2])))
 ;; (countCombNumber)  => 55
 
